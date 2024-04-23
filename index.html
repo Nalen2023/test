@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Caculator</h1>
+        <div class="item">
+            <label for="">a</label>
+             <input type="text" name="" id="num1">
+        </div>
+        <div class="item">
+            <label for="">b</label>
+            <input type="text" name="" id="num2">
+        </div>
+        <div class="item">
+            <label for="">c</label>
+            <input type="text" name="" id="num3">
+        </div>
+        <div class="item">
+            <label for="">Results is</label>
+            <input type="text" name="" id="result">
+        </div>
+    </div>
+</body>
+<script>
+    let a=document.getElementById('num1');
+    let b=document.getElementById('num2');
+    let c=document.getElementById('num3');
+    let x='';
+    const result=()=>{
+        if(a.val==0){
+            if(b.val==0){
+                if(c.val==0){
+                    document.write('X=No Many root');
+                }else{
+                    document.write('X=No root');
+                }
+            }else{
+                x=-Number(c.val)/Number(a.val);
+            }
+        }
+    }
+    result();
+</script>
+</html>
